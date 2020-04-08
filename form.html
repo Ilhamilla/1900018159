@@ -1,14 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>FORM DATA</title>
+
+    <style>
+        fieldset {
+            display: inline-block;
+            text-align: left;
+            margin: 250px auto;
+        }
+        
+        #tampilan {
+            font-family: arial;
+            font-size: 16px;
+        }
+        
+        div#kiri {
+            width: 200px;
+        }
+        
+        div#kanan {
+            width: 400px;
+        }
+        
+        div.tempat {
+            margin: 10px;
+            width: 100%;
+            display: flex;
+        }
+        
+        body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
 </head>
 
 <body>
+    <div>
+        <form id="tampilan" style="text-align:center" action="index.html" method="post">
+            <fieldset>
+                <legend id="tampilan" style="text-align:center">
+                    <h1>FORM</h1>
+                </legend>
 
+                <div class="tempat">
+                    <div id="kiri">
+                        <label id="kiri">Name </label>
+                    </div>
+                    <div id="kanan">
+                        <label id="kanan">: <input type="text" name="nama" value=""></label>
+                    </div>
+                </div>
+
+                <div class="tempat">
+                    <div id="kiri">
+                        <label id="kiri">Address </label>
+                    </div>
+                    <div id="kanan">
+                        <label id="kanan">: <input type="text" name="alamat" value=""></label>
+                    </div>
+                </div>
+
+                <div class="tempat">
+                    <div id="kiri">
+                        <label id="kiri">Number </label>
+                    </div>
+                    <div id="kanan">
+                        <label id="kanan">: <input type="text" name="telp" value=""></label>
+                    </div>
+                </div>
+
+                <div class="tempat">
+                    <div id="kiri">
+                        <label id="kiri">Gender </label>
+                    </div>
+                    <div id="kanan">
+                        <label id="kanan">: <input type="radio" name="jk" value=""/>Laki-Laki <input type="radio" name="jk" value=""/>Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="tempat">
+                    <div id="kiri">
+                        <label id="kiri">Religion </label>
+                    </div>
+                    <div id="kanan">
+                        <label id="kanan">: </label>
+                        <select id="tampilan" name="agama">
+                <option id="tampilan"></option>
+                <option id="tampilan">Islam</option>
+                <option id="tampilan">Kristen</option>
+                <option id="tampilan">Katolik</option>
+                <option id="tampilan">Hindu</option>
+                <option id="tampilan">Buddha</option>
+                <option id="tampilan">Konghucu</option>
+              </select>
+                    </div>
+                </div>
+
+                <div class="tempat">
+                    <div id="kiri">
+                        <label id="kiri">Achievement </label>
+                    </div>
+                    <div>
+                        <label>:&nbsp</label>
+                    </div>
+                    <div id="kanan">
+                        <label id="kanan"> <textarea name="name" rows="5" cols="50"></textarea></label>
+                    </div>
+                </div>
+
+                <div class="tempat">
+                    <div id="kiri">
+                        <label id="kiri"></label>
+                    </div>
+                    <div id="kanan">
+                        <button id="kanan " type="button" name="button">Submit</button>&nbsp<button type="button" name="button">Batal</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
